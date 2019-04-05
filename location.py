@@ -12,7 +12,7 @@ class Location:
 
     def __repr__(self):
         return "Location('{0}', {1}, {2})".format(self.name, self.lat, self.lon)
-#Location('SLO', 35.3, -120.7)
+
 # ADD BOILERPLATE HERE (__eq__ and __repr__ functions)
 
 def main():
