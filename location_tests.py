@@ -7,7 +7,10 @@ class TestLab1(unittest.TestCase):
         loc = Location("SLO", 35.3, -120.7)
         self.assertEqual(repr(loc),"Location('SLO', 35.3, -120.7)")
     
-    # Add more tests!
+    def test_eq(self):
+        loc = Location("SLO", 35.3, -120.7)
+        loc2 = Location("SLO", 35.3, -120.7)
+        self.assertTrue(loc == loc2)
 
 if __name__ == "__main__":
         unittest.main()
