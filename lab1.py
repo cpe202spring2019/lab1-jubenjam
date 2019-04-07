@@ -32,7 +32,7 @@ def reverse_rec(int_list):   # must use recursion
 def bin_search(target, low, high, int_list):  # must use recursion
     if type(int_list) != list:
         raise ValueError
-    if len(int_list) <= low:
+    if high < low:
        return None
     if int_list[high] == target:
        return high
