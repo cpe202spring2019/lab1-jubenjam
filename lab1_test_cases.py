@@ -58,7 +58,7 @@ class TestLab1(unittest.TestCase):
         self.assertEqual(bin_search(4, 4, high, list_val), 4)
         self.assertEqual(bin_search(10, 3, len(list_val)-1, list_val), 8)
         """check when value is not the same as the index"""
-        self.assertEqual(bin_search(4, 3, 10, [3, 2, 5, 6, 2, 4, 5, 3, 6, 6, 7, 4]), 5) 
+        self.assertEqual(bin_search(4, 3, 10, [1, 1, 2, 3, 4, 5, 6, 7, 8, 9, 9, 10, 11]), 4) 
 
 if __name__ == "__main__":
         unittest.main()
