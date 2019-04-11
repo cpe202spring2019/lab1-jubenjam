@@ -4,7 +4,7 @@ def max_list_iter(int_list):  # must use iteration not recursion
         raise ValueError
     if len(int_list) == 0:
         return None
-    max = 0
+    max = int_list[0]
     for i in int_list:
         if i > max:
            max = i
